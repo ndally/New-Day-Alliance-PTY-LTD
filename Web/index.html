@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang='en'>
+<head>
+  <meta charset='utf-8' />
+  <title>New Day Alliance — Sourcing, Distributing, and Direct-selling</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1' />
+  <meta name='description' content='New Day Alliance PTY LTD sources products according to the needs of businesses, focusing on paper packaging and pet essentials.' />
+  <link rel='icon' href='favicon.ico' type='image/x-icon'>
+  <link href='https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@600;700&display=swap' rel='stylesheet'>
+  <style>
+    :root{--navy:#0E2A47;--charcoal:#2B2B2B;--bg:#F5F6F8;--white:#FFFFFF}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,sans-serif;background:var(--bg);color:var(--charcoal)}
+    h1,h2{font-family:Poppins,sans-serif;color:var(--navy)}
+    .container{max-width:1100px;margin:auto;padding:20px}
+    /* Header/nav */
+    nav{background:var(--white);border-bottom:1px solid #eee}
+    .nav-inner{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 20px}
+    .brand{display:flex;align-items:center;gap:12px}
+    .brand img{height:56px;width:auto}
+    .brand .tagline{font-size:12px;color:#6b7280}
+    .links a{margin-left:16px;text-decoration:none;color:var(--charcoal);font-weight:600}
+    /* Hero */
+    .hero{padding:56px 20px;background:var(--white);text-align:center}
+    .hero .sub{max-width:780px;margin:12px auto 0;color:#444}
+    .btn{display:inline-block;padding:14px 18px;border-radius:10px;background:var(--navy);color:#fff;font-weight:700;text-decoration:none;margin-top:16px}
+    /* Sections */
+    section{padding:40px 20px}
+    .card{background:var(--white);padding:20px;border-radius:10px;margin-bottom:20px}
+    .gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px;margin-top:12px}
+    .gallery div{background:#eaeaea;height:120px;display:flex;align-items:center;justify-content:center;color:#666;font-size:14px;border-radius:8px}
+    /* Contact */
+    .contact-form input,.contact-form textarea{width:100%;padding:12px;margin-bottom:12px;border:1px solid #ccc;border-radius:8px}
+    .contact-form button{width:100%;padding:14px;background:var(--navy);color:#fff;border:none;border-radius:8px;font-weight:700}
+    footer{background:var(--white);border-top:1px solid #eee}
+  </style>
+<style>.hero-tagline { font-size:1.2em; font-style:italic; color:#555; text-align:center; margin:10px 0; }</style></head>
+</head>
+<body>
+  <nav>
+    <div class='nav-inner container'>
+      <div class='brand'>
+        <img src='logo.png' alt='New Day Alliance logo'>
+        <div>
+          <strong>New Day Alliance PTY LTD</strong><br/>
+          <span class='tagline'>Paper Packaging & Pet Essentials</span>
+        </div>
+      </div>
+      <div class='links'>
+        <a href='#about'>About</a>
+        <a href='#packaging'>Paper Packaging</a>
+        <a href='#pet'>Pet Items</a>
+        <a href='#contact'>Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class='hero'>
+    <div class='container'>
+      <h1>New Day Alliance — Sourcing, Distributing, and Direct-selling</h1>
+      <p class='sub'><p class="hero-tagline">Building a brighter future together</p>
+We source products according to the needs of businesses, focusing on paper packaging and pet essentials.</p>
+      <a href='#contact' class='btn'>Enquire Now</a>
+    </div>
+  </header>
+
+  <section id='about' class='container'>
+    <div class='card'>
+      <h2>About NDA</h2>
+      <p>New Day Alliance is a trading company partnering with manufacturers and distributors, with a vision to expand connections across industries. </p>
+    </div>
+  </section>
+
+  <section id='packaging' class='container'>
+    <div class='card'>
+      <h2>Paper Packaging</h2>
+      <p>We offer a range of paper packaging solutions including gift bags, boxes, and custom branding options.</p>
+      <div class='gallery'>
+        <div>Gift Bag</div>
+        <div>Box</div>
+        <div>Custom Print</div>
+      </div>
+    </div>
+  </section>
+
+  <section id='pet' class='container'>
+    <div class='card'>
+      <h2>Pet Essentials</h2>
+      <p>Explore our range of pet essentials including collars, leashes, harnesses, and toys.</p>
+      <div class='gallery'>
+        <div>Collar</div>
+        <div>Leash</div>
+        <div>Harness</div>
+      </div>
+    </div>
+  </section>
+
+  <section id='contact' class='container'>
+    <div class='card'>
+      <h2>Contact Us</h2>
+      <form class='contact-form' action='https://formspree.io/f/your-form-id' method='POST'>
+        <input type='text' name='name' placeholder='Your name' required>
+        <input type='email' name='email' placeholder='Email' required>
+        <textarea name='message' rows='5' placeholder='Tell us what you need' required></textarea>
+        <button type='submit'>Send Enquiry</button>
+      </form>
+      <p>Enquiry: <a href='mailto:connect@newdayalliance.com.au'>connect@newdayalliance.com.au</a></p>
+      <p>Sales: <a href='mailto:sales@newdayalliance.com.au'>sales@newdayalliance.com.au</a></p>
+      <p>Sales Manager: <a href='mailto:leo@newdayalliance.com.au'>leo@newdayalliance.com.au</a></p>
+    </div>
+  </section>
+
+  <footer class='container'>
+    <p>© <span id='year'></span> New Day Alliance PTY LTD. ABN: 14693530782. All rights reserved.</p>
+  </footer>
+
+  <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>
